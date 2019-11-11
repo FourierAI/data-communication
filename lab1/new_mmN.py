@@ -47,15 +47,15 @@ def packet(env, name, server, service_time, delays, trace):
             print("t={0:.4E}s: {1:s} delayed for {2:.4E}s".format(env.now, name, delay))
 
 
-def run_simulation(mean_ia_time, mean_srv_time, num_packets=1000, random_seed=1234, trace=True):
+def run_simulation(num_servers, mean_ia_time, mean_srv_time, num_packets=1000, random_seed=1234, trace=True):
     """Runs a simulation and returns statistics."""
     if trace:
-        print('M/M/1 queue\n')
+        print('M/M/' + str(num_servers) + ' queue\n')
     random.seed(random_seed)
     env = simpy.Environment()
 
     # start processes and run
-    server = simpy.Resource(env, capacity=2)
+    server = simpy.Resource(env, capacity=num_servers)
     delays = []
     env.process(source(env, mean_ia_time,
                        mean_srv_time, server, delays, number=num_packets, trace=trace))
@@ -72,7 +72,7 @@ if __name__ == "__main__":
         "--num_servers",
         help="number of servers; default is 1",
         default=1,
-        type=int)               # for extension to M/M/m
+        type=int)  # for extension to M/M/m
     parser.add_argument(
         "-A",
         "--arrival_rate",
@@ -103,17 +103,17 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # set variables using command-line arguments
-    num_servers = args.num_servers # for extension to M/M/m
-    mean_ia_time = 1.0/args.arrival_rate
-    mean_srv_time = 1.0/args.service_rate
+    num_servers = args.num_servers  # for extension to M/M/m
+    mean_ia_time = 1.0 / args.arrival_rate
+    mean_srv_time = 1.0 / args.service_rate
     num_packets = args.num_packets
     random_seed = args.random_seed
     trace = args.trace
 
     # run a simulation
-    mean_delay = run_simulation(mean_ia_time, mean_srv_time,
-                                                   num_packets, random_seed,
-                                                   trace)
+    mean_delay = run_simulation(num_servers, mean_ia_time, mean_srv_time,
+                                num_packets, random_seed,
+                                trace)
 
     # print arrival rate and mean delay
     print("{0:.4E}\t{1:.4E}".format(args.arrival_rate, mean_delay))

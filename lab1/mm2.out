@@ -1,4 +1,4 @@
-M/M/1 queue
+M/M/2 queue
 
 t=0.0000E+00s: Packet-0 arrived
 t=5.8113E-03s: Packet-0 served for 5.8113E-03s
@@ -3001,7 +3001,7 @@ t=2.0219E+02s: Packet-999 arrived
 t=2.0220E+02s: Packet-999 served for 5.3547E-03s
 t=2.0220E+02s: Packet-999 delayed for 5.3547E-03s
 5.0000E+00	1.0162E-02
-M/M/1 queue
+M/M/2 queue
 
 t=0.0000E+00s: Packet-0 arrived
 t=5.8113E-03s: Packet-0 served for 5.8113E-03s
@@ -6004,7 +6004,7 @@ t=1.0110E+02s: Packet-998 delayed for 3.6551E-03s
 t=1.0110E+02s: Packet-999 served for 5.3547E-03s
 t=1.0110E+02s: Packet-999 delayed for 5.3547E-03s
 1.0000E+01	1.0176E-02
-M/M/1 queue
+M/M/2 queue
 
 t=0.0000E+00s: Packet-0 arrived
 t=5.8113E-03s: Packet-0 served for 5.8113E-03s
@@ -9007,7 +9007,7 @@ t=6.7399E+01s: Packet-998 delayed for 3.6551E-03s
 t=6.7402E+01s: Packet-999 served for 5.3547E-03s
 t=6.7402E+01s: Packet-999 delayed for 5.3547E-03s
 1.5000E+01	1.0216E-02
-M/M/1 queue
+M/M/2 queue
 
 t=0.0000E+00s: Packet-0 arrived
 t=5.8113E-03s: Packet-0 served for 5.8113E-03s
@@ -12010,7 +12010,7 @@ t=5.0550E+01s: Packet-998 delayed for 3.6551E-03s
 t=5.0553E+01s: Packet-999 served for 5.3547E-03s
 t=5.0553E+01s: Packet-999 delayed for 5.3547E-03s
 2.0000E+01	1.0287E-02
-M/M/1 queue
+M/M/2 queue
 
 t=0.0000E+00s: Packet-0 arrived
 t=5.8113E-03s: Packet-0 served for 5.8113E-03s
@@ -15013,7 +15013,7 @@ t=4.0441E+01s: Packet-998 delayed for 3.6551E-03s
 t=4.0443E+01s: Packet-999 served for 5.3547E-03s
 t=4.0443E+01s: Packet-999 delayed for 5.3547E-03s
 2.5000E+01	1.0353E-02
-M/M/1 queue
+M/M/2 queue
 
 t=0.0000E+00s: Packet-0 arrived
 t=5.8113E-03s: Packet-0 served for 5.8113E-03s
@@ -18016,7 +18016,7 @@ t=3.3701E+01s: Packet-998 delayed for 3.6551E-03s
 t=3.3704E+01s: Packet-999 served for 5.3547E-03s
 t=3.3704E+01s: Packet-999 delayed for 5.3547E-03s
 3.0000E+01	1.0417E-02
-M/M/1 queue
+M/M/2 queue
 
 t=0.0000E+00s: Packet-0 arrived
 t=5.8113E-03s: Packet-0 served for 5.8113E-03s
@@ -21019,7 +21019,7 @@ t=2.8887E+01s: Packet-998 delayed for 3.6551E-03s
 t=2.8890E+01s: Packet-999 served for 5.3547E-03s
 t=2.8890E+01s: Packet-999 delayed for 5.3547E-03s
 3.5000E+01	1.0493E-02
-M/M/1 queue
+M/M/2 queue
 
 t=0.0000E+00s: Packet-0 arrived
 t=5.8113E-03s: Packet-0 served for 5.8113E-03s
@@ -24022,7 +24022,7 @@ t=2.5277E+01s: Packet-998 delayed for 3.6551E-03s
 t=2.5279E+01s: Packet-999 served for 5.3547E-03s
 t=2.5279E+01s: Packet-999 delayed for 5.3547E-03s
 4.0000E+01	1.0589E-02
-M/M/1 queue
+M/M/2 queue
 
 t=0.0000E+00s: Packet-0 arrived
 t=5.8113E-03s: Packet-0 served for 5.8113E-03s
@@ -27025,7 +27025,7 @@ t=2.2469E+01s: Packet-998 delayed for 3.6551E-03s
 t=2.2471E+01s: Packet-999 served for 5.3547E-03s
 t=2.2471E+01s: Packet-999 delayed for 5.3547E-03s
 4.5000E+01	1.0695E-02
-M/M/1 queue
+M/M/2 queue
 
 t=0.0000E+00s: Packet-0 arrived
 t=5.8113E-03s: Packet-0 served for 5.8113E-03s
@@ -30028,7 +30028,7 @@ t=2.0222E+01s: Packet-998 delayed for 3.6551E-03s
 t=2.0224E+01s: Packet-999 served for 5.3547E-03s
 t=2.0224E+01s: Packet-999 delayed for 5.3547E-03s
 5.0000E+01	1.0800E-02
-M/M/1 queue
+M/M/2 queue
 
 t=0.0000E+00s: Packet-0 arrived
 t=5.8113E-03s: Packet-0 served for 5.8113E-03s
@@ -33031,7 +33031,7 @@ t=1.8384E+01s: Packet-998 delayed for 3.6551E-03s
 t=1.8386E+01s: Packet-999 served for 5.3547E-03s
 t=1.8386E+01s: Packet-999 delayed for 5.3547E-03s
 5.5000E+01	1.0918E-02
-M/M/1 queue
+M/M/2 queue
 
 t=0.0000E+00s: Packet-0 arrived
 t=5.8113E-03s: Packet-0 served for 5.8113E-03s
@@ -36034,7 +36034,7 @@ t=1.6853E+01s: Packet-998 delayed for 3.6551E-03s
 t=1.6855E+01s: Packet-999 served for 5.3547E-03s
 t=1.6855E+01s: Packet-999 delayed for 5.3547E-03s
 6.0000E+01	1.1066E-02
-M/M/1 queue
+M/M/2 queue
 
 t=0.0000E+00s: Packet-0 arrived
 t=5.8113E-03s: Packet-0 served for 5.8113E-03s
@@ -39037,7 +39037,7 @@ t=1.5556E+01s: Packet-998 delayed for 3.6551E-03s
 t=1.5558E+01s: Packet-999 served for 5.3547E-03s
 t=1.5558E+01s: Packet-999 delayed for 5.3547E-03s
 6.5000E+01	1.1234E-02
-M/M/1 queue
+M/M/2 queue
 
 t=0.0000E+00s: Packet-0 arrived
 t=5.8113E-03s: Packet-0 served for 5.8113E-03s
@@ -42040,7 +42040,7 @@ t=1.4446E+01s: Packet-998 delayed for 3.6551E-03s
 t=1.4448E+01s: Packet-999 served for 5.3547E-03s
 t=1.4448E+01s: Packet-999 delayed for 5.3547E-03s
 7.0000E+01	1.1428E-02
-M/M/1 queue
+M/M/2 queue
 
 t=0.0000E+00s: Packet-0 arrived
 t=5.8113E-03s: Packet-0 served for 5.8113E-03s
@@ -45043,7 +45043,7 @@ t=1.3483E+01s: Packet-998 delayed for 3.6551E-03s
 t=1.3485E+01s: Packet-999 served for 5.3547E-03s
 t=1.3485E+01s: Packet-999 delayed for 5.3547E-03s
 7.5000E+01	1.1641E-02
-M/M/1 queue
+M/M/2 queue
 
 t=0.0000E+00s: Packet-0 arrived
 t=5.8113E-03s: Packet-0 served for 5.8113E-03s
@@ -48046,7 +48046,7 @@ t=1.2640E+01s: Packet-998 delayed for 3.6551E-03s
 t=1.2642E+01s: Packet-999 served for 5.3547E-03s
 t=1.2642E+01s: Packet-999 delayed for 5.3547E-03s
 8.0000E+01	1.1867E-02
-M/M/1 queue
+M/M/2 queue
 
 t=0.0000E+00s: Packet-0 arrived
 t=5.8113E-03s: Packet-0 served for 5.8113E-03s
@@ -51049,7 +51049,7 @@ t=1.1897E+01s: Packet-998 delayed for 3.6551E-03s
 t=1.1899E+01s: Packet-999 served for 5.3547E-03s
 t=1.1899E+01s: Packet-999 delayed for 5.3547E-03s
 8.5000E+01	1.2129E-02
-M/M/1 queue
+M/M/2 queue
 
 t=0.0000E+00s: Packet-0 arrived
 t=5.8113E-03s: Packet-0 served for 5.8113E-03s
@@ -54052,7 +54052,7 @@ t=1.1236E+01s: Packet-998 delayed for 3.6551E-03s
 t=1.1238E+01s: Packet-999 served for 5.3547E-03s
 t=1.1238E+01s: Packet-999 delayed for 5.3547E-03s
 9.0000E+01	1.2427E-02
-M/M/1 queue
+M/M/2 queue
 
 t=0.0000E+00s: Packet-0 arrived
 t=5.8113E-03s: Packet-0 served for 5.8113E-03s
