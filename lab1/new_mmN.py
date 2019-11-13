@@ -15,10 +15,10 @@
 #
 
 import argparse
-import numpy as np
 import random
+
+import numpy as np
 import simpy
-import sys
 
 
 def source(env, mean_ia_time, mean_srv_time, server, delays, number, trace):

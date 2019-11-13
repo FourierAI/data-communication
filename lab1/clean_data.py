@@ -4,6 +4,7 @@ import argparse
 def filter_average_time(content):
     return ('t=' not in content) and ('M/M' not in content) and ('' != content)
 
+
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
@@ -25,3 +26,4 @@ if __name__ == "__main__":
 
         for content in list_value:
             print(content)
+
