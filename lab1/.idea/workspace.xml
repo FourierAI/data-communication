@@ -3,13 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="959459f0-3418-4fd6-aa74-f336cdf1a328" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bash_file.sh" beforeDir="false" afterPath="$PROJECT_DIR$/bash_file.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mm1.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mm1.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mm2.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mm2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mm2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/mm2.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mm5.out" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mm5.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plot_mmN.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_mmN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/EEE414-Data communication-Lab1.md" beforeDir="false" afterPath="$PROJECT_DIR$/report/EEE414-Data communication-Lab1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/average_delay.png" beforeDir="false" afterPath="$PROJECT_DIR$/report/average_delay.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/mm2.png" beforeDir="false" afterPath="$PROJECT_DIR$/report/mm2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/mm5.png" beforeDir="false" afterPath="$PROJECT_DIR$/report/mm5.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,20 +19,64 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/lab1$plot_mm1.coverage" NAME="plot_mm1 Coverage Results" MODIFIED="1573473408023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lab1$plot_mm1.coverage" NAME="plot_mm1 Coverage Results" MODIFIED="1574689858082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/lab1$mm1.coverage" NAME="mm1 Coverage Results" MODIFIED="1572329251659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/lab1$employee.coverage" NAME="employee Coverage Results" MODIFIED="1573120846585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/lab1$generator_test.coverage" NAME="generator_test Coverage Results" MODIFIED="1572406979590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/lab1$clean_data.coverage" NAME="clean_data Coverage Results" MODIFIED="1573636125482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lab1$clean_data.coverage" NAME="clean_data Coverage Results" MODIFIED="1574682558053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/lab1$new_mm1.coverage" NAME="new_mm1 Coverage Results" MODIFIED="1573472837424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clean_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/new_mmN.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+              <folding>
+                <element signature="e#521#536#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bash_file.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plot_mmN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+            <state relative-caret-position="-4">
+              <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -40,58 +85,38 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda/anaconda3/lib/python3.7/site-packages/numpy/lib/_datasource.py">
+        <entry file="file://$USER_HOME$/anaconda/anaconda3/lib/python3.7/codecs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14616">
-              <caret line="615" column="14" selection-start-line="615" selection-start-column="14" selection-end-line="615" selection-end-column="14" />
+            <state relative-caret-position="7752">
+              <caret line="324" column="21" selection-start-line="324" selection-start-column="21" selection-end-line="324" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clean_data.py">
+        <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.3/python_stubs/1884010166/numpy/core/umath.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+            <state relative-caret-position="37344">
+              <caret line="1556" column="23" selection-start-line="1556" selection-start-column="23" selection-end-line="1556" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.3/python_stubs/1884010166/builtins.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1512">
-              <caret line="63" column="43" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/report/mm1.result.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/new_mmN.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-975">
-              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-              <folding>
-                <element signature="e#521#536#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bash_file.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/report/mm1_curve.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mm1.out">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="240">
+              <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -108,7 +133,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>M/M/1 queue</find>
+      <find>utilization_rate_0</find>
     </findStrings>
+    <replaceStrings>
+      <replace>p0</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -125,18 +154,17 @@
         <option value="$PROJECT_DIR$/mm1.out" />
         <option value="$PROJECT_DIR$/mm1_cleaned.out" />
         <option value="$PROJECT_DIR$/plot_mm1.py" />
-        <option value="$PROJECT_DIR$/plot_mmN.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/new_mmN.py" />
         <option value="$PROJECT_DIR$/clean_data.py" />
         <option value="$PROJECT_DIR$/bash_file.sh" />
+        <option value="$PROJECT_DIR$/plot_mmN.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1680" />
-    <option name="height" value="949" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -144,6 +172,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -156,11 +185,14 @@
               <item name="lab1" type="462c0819:PsiDirectoryNode" />
               <item name="report" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="lab1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -168,7 +200,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -182,7 +214,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.clean_data">
+  <component name="RunManager" selected="Python.plot_mm1">
     <configuration name="bash_file.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
       <module name="lab1" />
       <option name="INTERPRETER_OPTIONS" value="bash" />
@@ -274,7 +306,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plot_mmN.py" />
-      <option name="PARAMETERS" value="" />
+      <option name="PARAMETERS" value="-F 'mm2.out' -M 2 -S 50" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -282,10 +314,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Bash.bash_file.sh" />
+      <item itemvalue="Python.clean_data" />
+      <item itemvalue="Python.employee" />
+      <item itemvalue="Python.new_mm1" />
+      <item itemvalue="Python.plot_mm1" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.clean_data" />
         <item itemvalue="Python.plot_mm1" />
+        <item itemvalue="Python.clean_data" />
         <item itemvalue="Python.new_mm1" />
         <item itemvalue="Bash.bash_file.sh" />
         <item itemvalue="Python.employee" />
@@ -323,11 +362,17 @@
       <workItem from="1573628381559" duration="8772000" />
       <workItem from="1573700594979" duration="180000" />
       <workItem from="1573747861361" duration="225000" />
+      <workItem from="1574506966099" duration="187000" />
+      <workItem from="1574600854067" duration="583000" />
+      <workItem from="1574667252375" duration="820000" />
+      <workItem from="1574673761987" duration="10796000" />
+      <workItem from="1574688385802" duration="2225000" />
+      <workItem from="1574691006607" duration="291000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57929000" />
+    <option name="totallyTimeSpent" value="72831000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -339,32 +384,32 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="947" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15506716" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2008547" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4993895" weight="0.32982457" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.9047619" weight="0.33216375" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4957265" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.498779" weight="0.32959184" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.9047619" weight="0.33061224" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4957265" weight="0.3989796" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32982457" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32857144" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4993895" weight="0.32857144" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50427353" side_tool="true" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.9169719" visible="true" weight="0.22690058" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.75030524" weight="0.2994152" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.2838828" side_tool="true" visible="true" weight="0.37857142" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.7161172" visible="true" weight="0.37857142" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.74786323" weight="0.29081634" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32857144" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.37118438" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.34004885" />
       <window_info anchor="right" id="R Graphics" order="4" weight="0.32967034" />
       <window_info anchor="right" id="R Packages" order="5" weight="0.32967034" />
-      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Database" order="6" weight="0.01831502" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25030527" />
@@ -395,18 +440,93 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="(m * utilization_rate) ** n" language="Python" />
+        <watch expression="utilization_rate ** n" language="Python" />
+        <watch expression="np.exp(utilization_rate,n)" language="Python" />
+        <watch expression="np.exp(2,2)" language="Python" />
+        <watch expression="np.exp([1,2],2)" language="Python" />
+        <watch expression="x = np.exp2(utilization_rate,n)" language="Python" />
+        <watch expression="(m * utilization_rate) ** 1" language="Python" />
+        <watch expression="[(m * utilization_rate) ** num for num in n]" language="Python" />
+        <watch expression="np.array([math.factorial(num) for num in n])" language="Python" />
+        <watch expression="np.array([(m * utilization_rate) ** num for num in n])[0]" language="Python" />
+        <watch expression="utilization_rate / (x1 * (1 - utilization_rate)) " language="Python" />
+        <watch expression="utilization_rate / (x1 * (1 - utilization_rate)) * pm + 1 / service_rate" language="Python" />
+        <watch expression="np.array([(m * p) ** num for num in n])" language="Python" />
+        <watch expression="sum([num1 / num2                        for num1 in                        np.array([(m * p) ** num for num in n])                         for num2 in                        np.array([math.factorial(num) for num in n])                        ])" language="Python" />
+        <watch expression="[num1 / num2                        for num1 in                        np.array([(m * p) ** num for num in n])                         for num2 in                        np.array([math.factorial(num) for num in n])                        ]" language="Python" />
+        <watch expression="np.array([num1 / num2                                 for num1 in                                 np.array([(m * p) ** num for num in n])                                  for num2 in                                 np.array([math.factorial(num) for num in n])                                 ])" language="Python" />
+        <watch expression="np.array([(m * p) ** num for num in n])" language="Python" />
+        <watch expression="np.array([math.factorial(num) for num in n])" language="Python" />
+        <watch expression="np.array([(m * p) ** num for num in n])" language="Python" />
+        <watch expression="np.array([math.factorial(num) for num in n])" language="Python" />
+        <watch expression="np.array([denominator[num] / division[num] for num in range(m)])" language="Python" />
+        <watch expression="sum(np.array([denominator[num] / division[num] for num in range(m)]))" language="Python" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>sum(np.array([denominator[num] / division[num] for num in range(m)]))</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>np.array([denominator[num] / division[num] for num in range(m)])</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>np.array([math.factorial(num) for num in n])</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>np.array([(m * p) ** num for num in n])</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>np.array([num1 / num2                                 for num1 in                                 np.array([(m * p) ** num for num in n])                                  for num2 in                                 np.array([math.factorial(num) for num in n])                                 ])</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>[num1 / num2                        for num1 in                        np.array([(m * p) ** num for num in n])                         for num2 in                        np.array([math.factorial(num) for num in n])                        ]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>sum([num1 / num2                        for num1 in                        np.array([(m * p) ** num for num in n])                         for num2 in                        np.array([math.factorial(num) for num in n])                        ])</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>utilization_rate / (x1 * (1 - utilization_rate)) * pm + 1 / service_rate</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>utilization_rate / (x1 * (1 - utilization_rate))</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>np.array([(m * utilization_rate) ** num for num in n])[0]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/anaconda/anaconda3/lib/python3.7/random.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18288">
           <caret line="771" column="5" selection-start-line="771" selection-start-column="5" selection-end-line="771" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/anaconda3/lib/python3.7/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7440">
-          <caret line="311" selection-start-line="311" selection-end-line="311" />
         </state>
       </provider>
     </entry>
@@ -429,7 +549,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mm1_test.out" />
     <entry file="file://$PROJECT_DIR$/未确认 183555.crdownload" />
     <entry file="file://$USER_HOME$/anaconda/anaconda3/lib/python3.7/site-packages/simpy/resources/resource.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -443,44 +562,7 @@
     <entry file="file://$PROJECT_DIR$/mm5_cleaned.out" />
     <entry file="file://$PROJECT_DIR$/mm2_cleaned.out" />
     <entry file="file://$PROJECT_DIR$/mm1_cleaned.out" />
-    <entry file="file://$PROJECT_DIR$/mm5.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plot_mmN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/anaconda3/lib/python3.7/site-packages/numpy/lib/_datasource.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14616">
-          <caret line="615" column="14" selection-start-line="615" selection-start-column="14" selection-end-line="615" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clean_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.3/python_stubs/1884010166/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1512">
-          <caret line="63" column="43" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.3/python_stubs/1884010166/builtins.py" />
     <entry file="file://$PROJECT_DIR$/mm2.out">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -488,10 +570,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/report/EEE414-Data communication-Lab1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="120">
+            <caret line="5" selection-start-line="5" selection-end-line="5" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/mm2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/mm5.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mm1_test.out" />
+    <entry file="file://$USER_HOME$/anaconda/anaconda3/lib/python3.7/site-packages/numpy/lib/_datasource.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14664">
+          <caret line="617" selection-start-line="617" selection-end-line="617" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clean_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/anaconda3/lib/python3.7/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7752">
+          <caret line="324" column="21" selection-start-line="324" selection-start-column="21" selection-end-line="324" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.3/python_stubs/1884010166/numpy/core/umath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37344">
+          <caret line="1556" column="23" selection-start-line="1556" selection-start-column="23" selection-end-line="1556" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/mm1.result.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/mm1_curve.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/new_mmN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-975">
-          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        <state relative-caret-position="310">
+          <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
           <folding>
             <element signature="e#521#536#0" expanded="true" />
           </folding>
@@ -500,15 +633,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mm1.out">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mm5.out">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bash_file.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        <state relative-caret-position="336">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot_mmN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -54,7 +54,7 @@ And the average delay will submit this curve.
 
 Simulate 3 case , as mentioned in the given task instruction.
 
-![image-20191113193147674](/Users/geekye/Documents/Courses/Data communication/lab/lab1/report/average_delay.png)
+![image-20191125172846104](/Users/geekye/Documents/Courses/Data communication/lab/lab1/report/average_delay.png)
 
 Our experimental value may submit to this formula.
 
@@ -287,15 +287,15 @@ python plot_mmN.py -F 'mm1.out'
 
 ##### Result
 
-![image-20191113194445637](/Users/geekye/Documents/Courses/Data communication/lab/lab1/report/mm1.result.png)
+![image-20191125171419796](/Users/geekye/Documents/Courses/Data communication/lab/lab1/report/mm1.png)
 
 ##### Analysis
 
 As we can see from result, the simulation is consistent to theoretical curve. Refer to previous process, here is my result of M/M/2 and M/M/5.
 
- ![image-20191113194858485](/Users/geekye/Documents/Courses/Data communication/lab/lab1/report/mm2.png)
+![image-20191125171531108](/Users/geekye/Documents/Courses/Data communication/lab/lab1/report/mm2.png)
 
-![image-20191113194920597](/Users/geekye/Documents/Courses/Data communication/lab/lab1/report/mm5.png)
+![image-20191125171615833](/Users/geekye/Documents/Courses/Data communication/lab/lab1/report/mm5.png)
 
 ---
 

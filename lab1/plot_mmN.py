@@ -2,18 +2,41 @@ import argparse
 
 import numpy as np
 import matplotlib.pyplot as plt
+import math
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "-M",
+        "--num_servers",
+        help="number of servers; default is 1",
+        default=1,
+        type=int)
     parser.add_argument(
         "-F",
         "--file_path",
         help="file_path",
         default='',
         type=str)
+    parser.add_argument(
+        "-A",
+        "--arrival_rate",
+        help="packet arrival rate [packets/s]; default is 1.0",
+        default=1.0,
+        type=float)
+    parser.add_argument(
+        "-S",
+        "--service_rate",
+        help="packet service rate [packets/s]; default is 10.0",
+        default=0.1,
+        type=float)
+
     args = parser.parse_args()
 
     file_path = args.file_path
+    arrival_rate = args.arrival_rate
+    service_rate = args.service_rate
+    num_servers = args.num_servers
 
     file_prefix = file_path.split('.')[0]
 
@@ -38,9 +61,39 @@ if __name__ == "__main__":
     ax.grid(which='major', alpha=0.5)
 
     # calculate and plot analytical results
-    x1 = np.arange(1, 100)
-    y1 = 1 / (100 - x1)
-    plt.plot(x1, y1, 'b-', label="Analysis", linewidth=1)
+
+    if num_servers == 1:
+        x1 = np.arange(1, 100)
+        y1 = 1 / (100 - x1)
+        plt.plot(x1, y1, 'b-', label="Analysis", linewidth=1)
+    else:
+
+        m = num_servers
+
+        x1 = np.arange(1, 100)
+        p = x1 / service_rate / m
+
+        n = np.arange(0, m)
+
+        denominator = np.array([(m * p) ** num for num in n])
+
+        division = np.array([math.factorial(num) for num in n])
+
+        p0 = 1 / (sum(np.array([denominator[num] / division[num] for num in range(m)]))
+                  + (m * p) ** m / math.factorial(m)
+                  * 1 / (1 - p))
+
+        print("utilization 0 p = ", p0)
+
+        pm = (m * p) ** m / (math.factorial(m) * (1 - p)) * p0
+
+        print("pm = ", pm)
+
+        y1 = p / (x1 * (1 - p)) * pm + 1 / service_rate
+
+        print("y1 = ", y1)
+
+        plt.plot(x1, y1, 'b-', label="Analysis", linewidth=1)
 
     # load and plot simulation results
     # change delimiter '/t' into ','
