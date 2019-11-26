@@ -54,6 +54,8 @@ And the average delay will submit this curve.
 
 Simulate 3 case , as mentioned in the given task instruction.
 
+<img src="/Users/geekye/Documents/Courses/Data communication/lab/lab1/report/average_delay_1.png" alt="image-20191126164606461" style="zoom:50%;" />
+
 ![image-20191125172846104](/Users/geekye/Documents/Courses/Data communication/lab/lab1/report/average_delay.png)
 
 Our experimental value may submit to this formula.
@@ -189,32 +191,32 @@ if __name__ == "__main__":
 ```shell
 for i in $(seq 5 5 95);
 do echo $i ;
-python new_mm1.py -M 1 -A $i -S 100 --no-trace >> mm1.out
+python new_mmN.py -M 1 -A $i -S 100 -N 10000 --no-trace >> mm1.out
 done
 ```
 
 ##### Result
 
 ```shell
-5.0000E+00	1.0640E-02
-1.0000E+01	1.1237E-02
-1.5000E+01	1.1913E-02
-2.0000E+01	1.2733E-02
-2.5000E+01	1.3536E-02
-3.0000E+01	1.4300E-02
-3.5000E+01	1.5230E-02
-4.0000E+01	1.6420E-02
-4.5000E+01	1.7755E-02
-5.0000E+01	1.9363E-02
-5.5000E+01	2.1401E-02
-6.0000E+01	2.3922E-02
-6.5000E+01	2.6818E-02
-7.0000E+01	3.0910E-02
-7.5000E+01	3.6378E-02
-8.0000E+01	4.3777E-02
-8.5000E+01	5.3441E-02
-9.0000E+01	6.8108E-02
-9.5000E+01	8.9153E-02
+5.0000E+00	1.0511E-02
+1.0000E+01	1.1095E-02
+1.5000E+01	1.1725E-02
+2.0000E+01	1.2452E-02
+2.5000E+01	1.3263E-02
+3.0000E+01	1.4141E-02
+3.5000E+01	1.5148E-02
+4.0000E+01	1.6342E-02
+4.5000E+01	1.7738E-02
+5.0000E+01	1.9411E-02
+5.5000E+01	2.1465E-02
+6.0000E+01	2.4243E-02
+6.5000E+01	2.7676E-02
+7.0000E+01	3.2535E-02
+7.5000E+01	3.9691E-02
+8.0000E+01	4.8997E-02
+8.5000E+01	6.4200E-02
+9.0000E+01	9.7699E-02
+9.5000E+01	2.0845E-01
 ```
 
 ##### Plot diagram 
@@ -224,18 +226,41 @@ import argparse
 
 import numpy as np
 import matplotlib.pyplot as plt
+import math
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "-M",
+        "--num_servers",
+        help="number of servers; default is 1",
+        default=1,
+        type=int)
     parser.add_argument(
         "-F",
         "--file_path",
         help="file_path",
         default='',
         type=str)
+    parser.add_argument(
+        "-A",
+        "--arrival_rate",
+        help="packet arrival rate [packets/s]; default is 1.0",
+        default=1.0,
+        type=float)
+    parser.add_argument(
+        "-S",
+        "--service_rate",
+        help="packet service rate [packets/s]; default is 10.0",
+        default=0.1,
+        type=float)
+
     args = parser.parse_args()
 
     file_path = args.file_path
+    arrival_rate = args.arrival_rate
+    service_rate = args.service_rate
+    num_servers = args.num_servers
 
     file_prefix = file_path.split('.')[0]
 
@@ -260,9 +285,36 @@ if __name__ == "__main__":
     ax.grid(which='major', alpha=0.5)
 
     # calculate and plot analytical results
-    x1 = np.arange(1, 100)
-    y1 = 1 / (100 - x1)
-    plt.plot(x1, y1, 'b-', label="Analysis", linewidth=1)
+
+    # m/m/1 formula
+    if num_servers == 1:
+        x1 = np.arange(1, 100)
+        y1 = 1 / (100 - x1)
+        plt.plot(x1, y1, 'b-', label="Analysis", linewidth=1)
+        
+    else:
+
+        # m/m/n formula
+        m = num_servers
+
+        x1 = np.arange(1, 100)
+        p = x1 / service_rate / m
+
+        n = np.arange(0, m)
+
+        denominator = np.array([(m * p) ** num for num in n])
+
+        division = np.array([math.factorial(num) for num in n])
+
+        p0 = 1 / (sum(np.array([denominator[num] / division[num] for num in range(m)]))
+                  + (m * p) ** m / math.factorial(m)
+                  * 1 / (1 - p))
+
+        pm = (m * p) ** m / (math.factorial(m) * (1 - p)) * p0
+
+        y1 = p / (x1 * (1 - p)) * pm + 1 / service_rate
+
+        plt.plot(x1, y1, 'b-', label="Analysis", linewidth=1)
 
     # load and plot simulation results
     # change delimiter '/t' into ','
@@ -282,20 +334,20 @@ if __name__ == "__main__":
 ##### Shell code
 
 ```shell
-python plot_mmN.py -F 'mm1.out'
+python plot_mmN.py -M 1 -F mm1.out -S 100
 ```
 
 ##### Result
 
-![image-20191125171419796](/Users/geekye/Documents/Courses/Data communication/lab/lab1/report/mm1.png)
+<img src="/Users/geekye/Documents/Courses/Data communication/lab/lab1/report/mm1.png" alt="image-20191126000855238" style="zoom:50%;" />
 
 ##### Analysis
 
 As we can see from result, the simulation is consistent to theoretical curve. Refer to previous process, here is my result of M/M/2 and M/M/5.
 
-![image-20191125171531108](/Users/geekye/Documents/Courses/Data communication/lab/lab1/report/mm2.png)
+<img src="/Users/geekye/Documents/Courses/Data communication/lab/lab1/report/mm2.png" alt="image-20191126000938949" style="zoom:50%;" />
 
-![image-20191125171615833](/Users/geekye/Documents/Courses/Data communication/lab/lab1/report/mm5.png)
+<img src="/Users/geekye/Documents/Courses/Data communication/lab/lab1/report/mm5.png" alt="image-20191126001009514" style="zoom: 50%;" />
 
 ---
 

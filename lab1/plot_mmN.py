@@ -62,12 +62,15 @@ if __name__ == "__main__":
 
     # calculate and plot analytical results
 
+    # m/m/1 formula
     if num_servers == 1:
         x1 = np.arange(1, 100)
         y1 = 1 / (100 - x1)
         plt.plot(x1, y1, 'b-', label="Analysis", linewidth=1)
+
     else:
 
+        # m/m/n formula
         m = num_servers
 
         x1 = np.arange(1, 100)
@@ -83,15 +86,9 @@ if __name__ == "__main__":
                   + (m * p) ** m / math.factorial(m)
                   * 1 / (1 - p))
 
-        print("utilization 0 p = ", p0)
-
         pm = (m * p) ** m / (math.factorial(m) * (1 - p)) * p0
 
-        print("pm = ", pm)
-
         y1 = p / (x1 * (1 - p)) * pm + 1 / service_rate
-
-        print("y1 = ", y1)
 
         plt.plot(x1, y1, 'b-', label="Analysis", linewidth=1)
 
