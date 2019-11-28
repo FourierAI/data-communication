@@ -1,6 +1,6 @@
 
 
-# EEE414-Data Communication-lab1
+# EEE413-Data Communication-lab1
 
 ####Author: Zhipeng Ye
 
@@ -416,7 +416,7 @@ python plot_mmN.py -M 2 -F mm2.out -S 50
 9.5000E+01	2.1546E-01
 ```
 
-<img src="/Users/geekye/Documents/Courses/Data communication/lab/lab1/report/mm2.png" alt="image-20191126000938949" style="zoom:50%;" />
+<img src="/Users/geekye/Documents/Courses/Data communication/lab/lab1/report/mm2.png" alt="image-20191128093912226" style="zoom:50%;" />
 
 #### M/M/5
 
@@ -457,7 +457,7 @@ python plot_mmN.py -M 5 -F mm5.out -S 20
 9.5000E+01	2.3718E-01
 ```
 
-<img src="/Users/geekye/Documents/Courses/Data communication/lab/lab1/report/mm5.png" alt="image-20191127125138432" style="zoom:50%;" />
+<img src="/Users/geekye/Documents/Courses/Data communication/lab/lab1/report/mm5.png" alt="image-20191128093958797" style="zoom:50%;" />
 
 
 

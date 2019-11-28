@@ -101,7 +101,7 @@ if __name__ == "__main__":
     plt.xlabel(r'$\lambda$ [pkts/s]')
     plt.ylabel(r'$E[T]$ [s]')
     plt.legend()
-    plt.title(r'' + file_prefix + ' ($\mu=100$ [pkts/s])')
+    plt.title(r'' + file_prefix + ' ($\mu=' + str(service_rate) + '$ [pkts/s])')
 
     plt.savefig(file_prefix + '.pdf')
     plt.show()

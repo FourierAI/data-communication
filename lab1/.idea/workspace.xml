@@ -3,10 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="959459f0-3418-4fd6-aa74-f336cdf1a328" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mm5.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/mm5.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EEE413-Lab1-Zhipeng Ye-1926908.rar" beforeDir="false" afterPath="$PROJECT_DIR$/EEE413-Lab1-Zhipeng Ye-1926908.rar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EEE413-Lab1-Zhipeng Ye-1926908/EEE413-Lab1-Zhipeng Ye-1926908.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/EEE413-Lab1-Zhipeng Ye-1926908/EEE413-Lab1-Zhipeng Ye-1926908.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mm2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mm5.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plot_mmN.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_mmN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/EEE412-Lab04-Zhipeng Ye-1926908.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/report/EEE414-Data communication-Lab1.md" beforeDir="false" afterPath="$PROJECT_DIR$/report/EEE414-Data communication-Lab1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/EEE414-Data communication-Lab1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/report/EEE414-Data communication-Lab1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/mm5.png" beforeDir="false" afterPath="$PROJECT_DIR$/report/mm5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/EEE414-Data communication-Lab1.pdf" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,17 +45,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bash_file.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+            <state relative-caret-position="408">
+              <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/new_mmN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2520">
-              <caret line="105" column="25" selection-start-line="105" selection-start-column="25" selection-end-line="105" selection-end-column="25" />
+            <state relative-caret-position="2616">
+              <caret line="113" column="6" selection-start-line="113" selection-start-column="6" selection-end-line="113" selection-end-column="6" />
               <folding>
                 <element signature="e#521#536#0" expanded="true" />
               </folding>
@@ -68,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plot_mmN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1728">
-              <caret line="76" column="33" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
+            <state relative-caret-position="229">
+              <caret line="97" column="25" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="25" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -85,15 +89,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
               <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mm5.out">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -383,11 +378,13 @@
       <workItem from="1574843596178" duration="19000" />
       <workItem from="1574850092770" duration="481000" />
       <workItem from="1574856678099" duration="604000" />
+      <workItem from="1574904855668" duration="461000" />
+      <workItem from="1574910864790" duration="11000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86784000" />
+    <option name="totallyTimeSpent" value="87256000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -399,10 +396,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="944" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="952" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21550672" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22039072" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -415,9 +412,9 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4993895" weight="0.32857144" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.25702077" side_tool="true" visible="true" weight="0.28638497" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.7148962" weight="0.43139535" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="12" sideWeight="0.7429792" visible="true" weight="0.28638497" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.2863248" side_tool="true" visible="true" weight="0.43023255" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.7136752" visible="true" weight="0.43023255" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.74236876" weight="0.28538013" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32857144" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -607,10 +604,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mm5.out">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bash_file.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        <state relative-caret-position="408">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new_mmN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2616">
+          <caret line="113" column="6" selection-start-line="113" selection-start-column="6" selection-end-line="113" selection-end-column="6" />
+          <folding>
+            <element signature="e#521#536#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -621,27 +635,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plot_mmN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1728">
-          <caret line="76" column="33" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mm2.out">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mm5.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
@@ -668,12 +665,12 @@
     <entry file="file://$PROJECT_DIR$/report/mm1_curve.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/new_mmN.py">
+    <entry file="file://$PROJECT_DIR$/plot_mmN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2520">
-          <caret line="105" column="25" selection-start-line="105" selection-start-column="25" selection-end-line="105" selection-end-column="25" />
+        <state relative-caret-position="229">
+          <caret line="97" column="25" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="25" />
           <folding>
-            <element signature="e#521#536#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
