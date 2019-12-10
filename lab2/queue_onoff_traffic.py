@@ -12,6 +12,8 @@
 import argparse
 import numpy as np
 import simpy
+import threading
+import time
 
 
 class Packet(object):
@@ -20,6 +22,7 @@ class Packet(object):
     - ctime: packet creation time
     - size: packet size in bytes
     """
+
     def __init__(self, ctime, size):
         self.ctime = ctime
         self.size = size
@@ -35,6 +38,7 @@ class OnoffPacketGenerator(object):
     - on_period: ON period in second
     - off_period: OFF period in second
     """
+
     def __init__(self, env, pkt_size, pkt_ia_time, on_period, off_period,
                  trace=False):
         self.env = env
@@ -81,23 +85,49 @@ class FifoQueue(object):
     Parameters:
     - env : simpy.Environment
     """
+
     def __init__(self, env, trace=False):
         self.trace = trace
         self.store = simpy.Store(env)
         self.env = env
         self.out = None
         self.action = env.process(self.run())
+        self.transmission_rate = 10 * 10 ** 6 * 10 ** (-3)
+        self.token_rate = 10 * 10 ** 6 * 10 ** (-3)
+        self.capacity = 5 * 10 ** 6
+        self.token_amount = self.capacity
+        self.timeout = 1 * 10 ** (-3)
 
     def run(self):
+
+        token_thread = threading.Thread(target=self.generate_token)
+        token_thread.start()
+
         while True:
             msg = (yield self.store.get())
+            pkt_size = msg.size
 
-            # TODO: Implement packet processing here.
+            if pkt_size > self.token_amount:
+                msg.size = pkt_size - self.token_amount
+                self.token_amount = 0
+                yield self.env.timeout(self.timeout)
+            else:
+                self.token_amount - pkt_size
 
+            delay_time = msg.size / self.transmission_rate
+            self.env.timeout(delay_time)
             self.out.put(msg)
 
     def put(self, pkt):
         self.store.put(pkt)
+
+    def generate_token(self):
+        while True:
+            yield self.env.timeout(self.timeout)
+            if self.token_amount < self.capacity:
+                self.token_amount = self.token_amount + self.token_rate
+            else:
+                self.token_amount = self.capacity
 
 
 class PacketSink(object):
@@ -108,6 +138,7 @@ class PacketSink(object):
     - trace: Boolean
 
     """
+
     def __init__(self, env, trace=False):
         self.store = simpy.Store(env)
         self.env = env
