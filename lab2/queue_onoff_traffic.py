@@ -10,10 +10,9 @@
 
 
 import argparse
+
 import numpy as np
 import simpy
-import threading
-import time
 
 
 class Packet(object):
@@ -92,42 +91,47 @@ class FifoQueue(object):
         self.env = env
         self.out = None
         self.action = env.process(self.run())
-        self.transmission_rate = 10 * 10 ** 6 * 10 ** (-3)
-        self.token_rate = 10 * 10 ** 6 * 10 ** (-3)
-        self.capacity = 5 * 10 ** 6
+
+        # unit b/ms
+        self.transmission_rate = 10 * 10 ** 3
+        self.token_rate = 5 * 10 ** 3
+        self.capacity = 5 * 10 ** 3
         self.token_amount = self.capacity
-        self.timeout = 1 * 10 ** (-3)
+        self.current_time = env.now
 
     def run(self):
 
-        token_thread = threading.Thread(target=self.generate_token)
-        token_thread.start()
-
         while True:
             msg = (yield self.store.get())
-            pkt_size = msg.size
 
-            if pkt_size > self.token_amount:
-                msg.size = pkt_size - self.token_amount
-                self.token_amount = 0
-                yield self.env.timeout(self.timeout)
+            now = env.now
+            time_passed = now - self.current_time
+
+            if time_passed == 0:
+                self.token_amount = self.capacity
             else:
-                self.token_amount - pkt_size
+                self.token_amount = self.token_amount + self.token_rate * time_passed
 
-            delay_time = msg.size / self.transmission_rate
-            self.env.timeout(delay_time)
+                if self.token_amount > self.capacity:
+                    self.token_amount = self.capacity
+
+            if msg.size > self.token_amount:
+
+                token_difference = self.capacity - self.token_amount
+                yield self.env.timeout(token_difference / self.token_rate)
+                self.token_amount = 0
+            else:
+                self.token_amount = self.token_amount - msg.size
+
+            self.current_time = env.now
+
+            delay_time = self.capacity / self.transmission_rate
+            yield self.env.timeout(delay_time)
+
             self.out.put(msg)
 
     def put(self, pkt):
         self.store.put(pkt)
-
-    def generate_token(self):
-        while True:
-            yield self.env.timeout(self.timeout)
-            if self.token_amount < self.capacity:
-                self.token_amount = self.token_amount + self.token_rate
-            else:
-                self.token_amount = self.capacity
 
 
 class PacketSink(object):
@@ -169,24 +173,24 @@ if __name__ == '__main__':
     parser.add_argument(
         "-A",
         "--pkt_ia_time",
-        help="packet interarrival time [second]; default is 0.1",
-        default=0.1,
+        help="packet interarrival time [second]; default is 10 * 10 ** (-3)",
+        default=10 * 10 ** (-3),
         type=float)
     parser.add_argument(
         "--on_period",
-        help="on period [second]; default is 1.0",
-        default=1.0,
+        help="on period [m second]; default is 1.0",
+        default=1,
         type=float)
     parser.add_argument(
         "--off_period",
-        help="off period [second]; default is 1.0",
-        default=1.0,
+        help="off period [m second]; default is 1.0",
+        default=1,
         type=float)
     parser.add_argument(
         "-T",
         "--sim_time",
-        help="time to end the simulation [second]; default is 10",
-        default=10,
+        help="time to end the simulation [m second]; default is 2",
+        default=2,
         type=float)
     parser.add_argument(
         "-R",
@@ -211,7 +215,7 @@ if __name__ == '__main__':
     env = simpy.Environment()
     pg = OnoffPacketGenerator(env, pkt_size, pkt_ia_time, on_period, off_period,
                               trace)
-    fifo = FifoQueue(env, trace)  # TODO: implemente FifoQueue class
+    fifo = FifoQueue(env, trace)
     ps = PacketSink(env, trace)
     pg.out = fifo
     fifo.out = ps
