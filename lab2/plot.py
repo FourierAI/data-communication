@@ -20,19 +20,6 @@ if __name__ == "__main__":
     fig = plt.figure()
     ax = fig.add_subplot(1, 1, 1)
 
-    # Major ticks every 10, minor ticks every 5 for x axis
-    # x_major_ticks = np.arange(0, 101, 10)
-    # x_minor_ticks = np.arange(0, 101, 5)
-    #
-    # # Major ticks every 0.1, minor ticks every 0.1 for y axis
-    # y_major_ticks = np.arange(0, 1.1, 0.2)
-    # y_minor_ticks = np.arange(0, 1.1, 0.1)
-
-    # ax.set_xticks(x_major_ticks)
-    # ax.set_xticks(x_minor_ticks, minor=True)
-    # ax.set_yticks(y_major_ticks)
-    # ax.set_yticks(y_minor_ticks, minor=True)
-
     # Or if you want different settings for the grids:
     ax.grid(which='minor', alpha=0.2)
     ax.grid(which='major', alpha=0.5)
@@ -41,14 +28,15 @@ if __name__ == "__main__":
 
     # load and plot simulation results
     # change delimiter '/t' into ','
-    y1 = np.loadtxt('token2.out', unpack=True)
-    x1 = list(range(len(y1)))
+    x,y = np.loadtxt('wait_time.out', delimiter = ' = ' , unpack=True)
 
-    plt.plot(x1, y1, label="Simulation")
+    plt.plot(x, y)
+    plt.xlabel('packet size B')
+    plt.ylabel('waiting time ms')
 
     # add labels, legend, and title
     plt.legend()
-    plt.title(r'$ [pkts/s])')
+    plt.title(r'variation of waiting time with the packet size')
 
-    plt.savefig('token.pdf')
+    plt.savefig('waiting time.pdf')
     plt.show()

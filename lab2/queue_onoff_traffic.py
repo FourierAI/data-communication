@@ -221,4 +221,4 @@ if __name__ == '__main__':
     fifo.out = ps
     env.run(until=sim_time)
 
-    print("Average waiting time = {:.4E} [s]\n".format(np.mean(ps.wait_times)))
+    print("{:.4E} = {:.4E}\n".format(pkt_size, np.mean(ps.wait_times)))
