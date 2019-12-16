@@ -104,28 +104,30 @@ class FifoQueue(object):
         while True:
             msg = (yield self.store.get())
 
-            now = env.now
-            time_passed = now - self.current_time
+            # if msg.size <= self.capacity put packet into FIFO queue
+            if msg.size <= self.capacity:
+                now = env.now
+                time_passed = now - self.current_time
 
-            self.token_amount = self.token_amount + self.token_rate * time_passed
+                self.token_amount = self.token_amount + self.token_rate * time_passed
 
-            if self.token_amount > self.capacity:
-                self.token_amount = self.capacity
+                if self.token_amount > self.capacity:
+                    self.token_amount = self.capacity
 
-            if msg.size > self.token_amount:
+                if msg.size > self.token_amount:
 
-                token_difference = msg.size - self.token_amount
-                yield self.env.timeout(token_difference / self.token_rate)
-                self.token_amount = 0
-            else:
-                self.token_amount = self.token_amount - msg.size
+                    token_difference = msg.size - self.token_amount
+                    yield self.env.timeout(token_difference / self.token_rate)
+                    self.token_amount = 0
+                else:
+                    self.token_amount = self.token_amount - msg.size
 
-            self.current_time = env.now
+                self.current_time = env.now
 
-            delay_time = self.capacity / self.transmission_rate
-            yield self.env.timeout(delay_time)
+                delay_time = msg.size / self.transmission_rate
+                yield self.env.timeout(delay_time)
 
-            self.out.put(msg)
+                self.out.put(msg)
 
     def put(self, pkt):
         self.store.put(pkt)
