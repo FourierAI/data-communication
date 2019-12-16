@@ -5,18 +5,6 @@ import matplotlib.pyplot as plt
 import math
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "-M",
-        "--num_servers",
-        help="number of servers; default is 1",
-        default=1,
-        type=int)
-
-    args = parser.parse_args()
-
-    num_servers = args.num_servers
-
     fig = plt.figure()
     ax = fig.add_subplot(1, 1, 1)
 
@@ -28,7 +16,7 @@ if __name__ == "__main__":
 
     # load and plot simulation results
     # change delimiter '/t' into ','
-    x,y = np.loadtxt('wait_time.out', delimiter = ' = ' , unpack=True)
+    x, y = np.loadtxt('wait_time.out', delimiter=' = ', unpack=True)
 
     plt.plot(x, y)
     plt.xlabel('packet size B')

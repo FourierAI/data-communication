@@ -107,17 +107,14 @@ class FifoQueue(object):
             now = env.now
             time_passed = now - self.current_time
 
-            if time_passed == 0:
-                self.token_amount = self.capacity
-            else:
-                self.token_amount = self.token_amount + self.token_rate * time_passed
+            self.token_amount = self.token_amount + self.token_rate * time_passed
 
-                if self.token_amount > self.capacity:
-                    self.token_amount = self.capacity
+            if self.token_amount > self.capacity:
+                self.token_amount = self.capacity
 
             if msg.size > self.token_amount:
 
-                token_difference = self.capacity - self.token_amount
+                token_difference = msg.size - self.token_amount
                 yield self.env.timeout(token_difference / self.token_rate)
                 self.token_amount = 0
             else:

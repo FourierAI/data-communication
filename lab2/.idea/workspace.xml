@@ -6,8 +6,8 @@
       <change beforePath="$PROJECT_DIR$/plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/queue_onoff_traffic.py" beforeDir="false" afterPath="$PROJECT_DIR$/queue_onoff_traffic.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run_batchly.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run_batchly.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/token.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/token.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wait_time.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/waiting time.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/waiting time.pdf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +17,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/lab2$pytest_for_test_test.coverage" NAME="pytest for test.test Coverage Results" MODIFIED="1575866274451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/lab2$plot.coverage" NAME="plot Coverage Results" MODIFIED="1576230902192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lab2$plot.coverage" NAME="plot Coverage Results" MODIFIED="1576498019138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/lab2$test.coverage" NAME="test Coverage Results" MODIFIED="1575977258625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/lab2$queue_onoff_traffic.coverage" NAME="queue_onoff_traffic Coverage Results" MODIFIED="1576141535861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/lab2$yeild1.coverage" NAME="yeild1 Coverage Results" MODIFIED="1575866604528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -28,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/queue_onoff_traffic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1092">
-              <caret line="128" column="30" selection-start-line="128" selection-start-column="30" selection-end-line="128" selection-end-column="30" />
+            <state relative-caret-position="228">
+              <caret line="207" column="28" lean-forward="true" selection-start-line="207" selection-start-column="28" selection-end-line="207" selection-end-column="28" />
               <folding>
                 <element signature="e#247#262#0" expanded="true" />
               </folding>
@@ -40,7 +40,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
+            <state relative-caret-position="336">
               <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
               <folding>
                 <element signature="e#154#166#0" expanded="true" />
@@ -52,8 +52,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_batchly.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+            <state relative-caret-position="72">
+              <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wait_time.out">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda/anaconda3/lib/python3.7/site-packages/simpy/core.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="337">
+              <caret line="229" selection-start-line="229" selection-end-line="229" />
             </state>
           </provider>
         </entry>
@@ -70,8 +88,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+            <state relative-caret-position="47">
+              <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -84,7 +102,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/anaconda/anaconda3/envs/py37/lib/python3.7/site-packages/numpy/lib/npyio.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="26208">
               <caret line="1116" selection-start-line="1116" selection-end-line="1116" />
             </state>
           </provider>
@@ -136,7 +154,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="949" />
@@ -147,6 +165,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -158,7 +177,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -315,6 +333,7 @@
       <workItem from="1576123672661" duration="12077000" />
       <workItem from="1576228341258" duration="1084000" />
       <workItem from="1576229737791" duration="1911000" />
+      <workItem from="1576484969155" duration="1426000" />
     </task>
     <servers />
   </component>
@@ -333,7 +352,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57846000" />
+    <option name="totallyTimeSpent" value="59272000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -345,15 +364,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="949" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23137973" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23382173" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4993895" weight="0.32905483" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.82173383" weight="0.36989498" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4993895" weight="0.3287827" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.82173383" visible="true" weight="0.2132653" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3990665" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -367,7 +386,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.01892552" />
+      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.46520147" />
       <window_info anchor="right" id="R Graphics" order="4" />
       <window_info anchor="right" id="R Packages" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -413,9 +432,10 @@
     <entry file="file://$PROJECT_DIR$/token2.out" />
     <entry file="file://$PROJECT_DIR$/test2.out" />
     <entry file="file://$PROJECT_DIR$/test1.out" />
+    <entry file="file://$PROJECT_DIR$/test.out" />
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
+        <state relative-caret-position="336">
           <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
           <folding>
             <element signature="e#154#166#0" expanded="true" />
@@ -430,6 +450,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/anaconda/anaconda3/envs/py37/lib/python3.7/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/anaconda3/envs/py37/lib/python3.7/site-packages/numpy/lib/npyio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26208">
+          <caret line="1116" selection-start-line="1116" selection-end-line="1116" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/anaconda/anaconda3/envs/py37/lib/python3.7/site-packages/simpy/core.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3888">
@@ -437,46 +467,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda/anaconda3/envs/py37/lib/python3.7/site-packages/numpy/lib/npyio.py">
+    <entry file="file://$USER_HOME$/anaconda/anaconda3/lib/python3.7/site-packages/simpy/core.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="1116" selection-start-line="1116" selection-end-line="1116" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
-        </state>
-      </provider>
-      <provider editor-type-id="LargeFileEditor">
-        <state relative-caret-position="498627">
-          <caret line="21334" column="18" selection-start-line="21334" selection-start-column="18" selection-end-line="21334" selection-end-column="18" />
+        <state relative-caret-position="337">
+          <caret line="229" selection-start-line="229" selection-end-line="229" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wait_time.out">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="204">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/run_batchly.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        <state relative-caret-position="72">
+          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda/anaconda3/envs/py37/lib/python3.7/site-packages/matplotlib/pyplot.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/queue_onoff_traffic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1092">
-          <caret line="128" column="30" selection-start-line="128" selection-start-column="30" selection-end-line="128" selection-end-column="30" />
+        <state relative-caret-position="228">
+          <caret line="207" column="28" lean-forward="true" selection-start-line="207" selection-start-column="28" selection-end-line="207" selection-end-column="28" />
           <folding>
             <element signature="e#247#262#0" expanded="true" />
           </folding>
@@ -485,8 +500,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/plot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+        <state relative-caret-position="47">
+          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
         </state>
       </provider>
     </entry>
