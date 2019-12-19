@@ -8,3 +8,5 @@ done
 
 
 python queue_onoff_traffic.py -S 3000 -T 2 >> wait_time_trace.out
+
+python queue_onoff_traffic.py -S 200 -T 20 --no-trace >> eachpacket_waitingtime_data.out
