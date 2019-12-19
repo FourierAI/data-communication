@@ -124,8 +124,8 @@ class FifoQueue(object):
 
                 self.current_time = env.now
 
-                delay_time = msg.size / self.transmission_rate
-                yield self.env.timeout(delay_time)
+                # delay_time = msg.size / self.transmission_rate
+                # yield self.env.timeout(delay_time)
 
                 self.out.put(msg)
 
@@ -153,7 +153,9 @@ class PacketSink(object):
         while True:
             msg = (yield self.store.get())
             now = self.env.now
-            self.wait_times.append(now - msg.ctime)
+
+            msg.delay = now - msg.ctime
+            self.wait_times.append(msg)
             if self.trace:
                 print("t={0:.4E} [s]: packet arrived with size={1:.4E} [B]".format(now, msg.size))
 
@@ -220,4 +222,32 @@ if __name__ == '__main__':
     fifo.out = ps
     env.run(until=sim_time)
 
-    print("{:.4E} = {:.4E}\n".format(pkt_size, np.mean(ps.wait_times)))
+    print('Each packet delay time:')
+
+    ps.wait_times = sorted(ps.wait_times, key=lambda Packet: Packet.ctime)
+
+    list_msg = []
+    for i in range(len(ps.wait_times) - 1):
+        msg_after = ps.wait_times[i + 1]
+        msg_before = ps.wait_times[i]
+
+        if i == 0:
+            difference = msg_before.ctime - 0
+        else:
+            difference = msg_after.delay - msg_before.delay
+
+        # because of on-off model
+        if difference < 0:
+            difference = 0
+
+        packet = Packet(msg_before.ctime, msg_before.size)
+        packet.delay = difference
+
+        list_msg.append(packet)
+
+    for msg in list_msg:
+        # print("msg time : {:.4E}, msg delay : {:.4E}".format(msg.ctime, msg.delay))
+        print("{:.4E},{:.4E}".format(msg.ctime, msg.delay))
+
+    print("Average waiting time:")
+    print("{:.4E} = {:.4E}\n".format(pkt_size, np.mean([msg.delay for msg in list_msg])))
